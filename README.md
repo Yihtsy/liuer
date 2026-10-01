@@ -101,6 +101,13 @@ python -m twine check dist/*
 
 Every release should update `CHANGELOG.md`, keep the GitHub README current, and publish only from a clean git working tree.
 
+PyPI publishing is intended to run through GitHub Actions Trusted Publishing. After configuring `Yihtsy/liuer` as a trusted publisher for the `liuer` project on PyPI, push a release tag such as:
+
+```bash
+git tag v0.0.2
+git push origin v0.0.2
+```
+
 ## License
 
 MIT

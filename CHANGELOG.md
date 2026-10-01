@@ -13,6 +13,7 @@ All notable changes to `liuer` are recorded here.
 - Migrated local `handytool.stats` helpers into `liuer.scipy.stats`.
 - Migrated local `handytool.itertools` combination helpers into `liuer.itertools`.
 - Migrated local `handytool.plot` jittered faceted boxplot helper into `liuer.matplotlib.pyplot`.
+- Added a GitHub Actions publishing workflow for PyPI Trusted Publishing.
 
 ### Changed
 

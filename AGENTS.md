@@ -36,4 +36,14 @@ This project is `liuer`, a Python package whose purpose is to mimic familiar Pyt
 4. Run `python -m ruff check .`.
 5. Run `python -m build`.
 6. Run `python -m twine check dist/*`.
-7. Create a git tag, push to GitHub, then publish to PyPI.
+7. Create a git tag and push it to GitHub.
+8. Publish to PyPI through `.github/workflows/publish.yml` and PyPI Trusted Publishing.
+
+## PyPI Trusted Publishing
+
+- GitHub repository: `Yihtsy/liuer`
+- Workflow file: `.github/workflows/publish.yml`
+- PyPI project: `liuer`
+- PyPI environment name: `pypi`
+- Tag pattern: `v*.*.*`
+- Do not store PyPI API tokens in the repository. The workflow uses OpenID Connect with `id-token: write`.
